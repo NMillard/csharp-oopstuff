@@ -1,0 +1,51 @@
+[
+  {
+    "firmware": 3,
+    "date_setup": 1502897952,
+    "device_group": "5b2ba20affe5b13743eabf23",
+    "module_descs": [
+      {
+        "last_setup": 1503389744,
+        "velux_type": "window",
+        "room": "2695350091",
+        "last_seen": 1503569035,
+        "type": "NXO",
+        "id": "56245c260b020542",
+        "name": "Window 1"
+      },
+      {
+        "last_setup": 1503390013,
+        "velux_type": "window",
+        "room": "3455555106",
+        "last_seen": 1503663904,
+        "type": "NXO",
+        "id": "56245c26080c0556",
+        "name": "Window 2"
+      },
+      {
+        "last_setup": 1503569029,
+        "rf_status": 40,
+        "room": "3455555106",
+        "firmware": 1,
+        "type": "NXS",
+        "id": "0a:00:00:00:01:92",
+        "last_seen": 1503663972
+      },
+      {
+        "last_setup": 1503389873,
+        "rf_status": 9,
+        "name": "Sensor Switch T21 Drop Test",
+        "room": "3455555106",
+        "firmware": 1,
+        "type": "NXS",
+        "id": "0a:00:00:00:01:74",
+        "last_seen": 1503663972
+      }
+    ],
+    "home_id": "59646bd3743c3675858b79cf",
+    "wifi_status": 58,
+    "_id": "70:ee:50:2c:70:74",
+    "last_fw_update": 1502951449,
+    "date_creation": 1496325070
+  }
+]
