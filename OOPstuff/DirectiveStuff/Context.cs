@@ -9,7 +9,7 @@ namespace OOPstuff.DirectiveStuff {
         
         public void LoadWithDirective() {
             var type = typeof(IHasName);
-            var types = System.Reflection.Assembly.GetExecutingAssembly().GetTypes()
+            var types = Assembly.GetExecutingAssembly().GetTypes()
                 .Where(t => type.IsAssignableFrom(t));
 
             foreach (var concreteType in types) {

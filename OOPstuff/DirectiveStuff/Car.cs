@@ -1,6 +1,6 @@
 namespace OOPstuff.DirectiveStuff {
     
-    [PropertyRequirement(isCodeRequired: false)]
+    [PropertyRequirement(typeof(RequiresNoCode))]
     public class Car : IHasName {
         public Car() {
         }

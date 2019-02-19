@@ -1,6 +1,6 @@
 namespace OOPstuff.DirectiveStuff {
     
-    [PropertyRequirement(isCodeRequired: true)]
+    [PropertyRequirement(typeof(RequiresCode))]
     public class Animal : IHasName {
         
         public Animal() {
