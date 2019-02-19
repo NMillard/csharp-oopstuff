@@ -3,35 +3,35 @@
 namespace OOPstuff.StatePattern.CarState {
 
     class Car : IDriveable {
-        private ICarState State;
+        private ICarState _state;
 
         private string Make { get; set; }
 
         public Car() {
-            State = new StopState();
+            _state = new StopState();
         }
 
         public string GetMake() => this.Make;
 
         public IDriveable StartEngine() {
-            State.ChangeEngineStatus(this);
+            _state.ChangeEngineStatus(this);
             return this;
         }
 
         public IDriveable StopEngine() {
-            State.ChangeEngineStatus(this);
+            _state.ChangeEngineStatus(this);
             return this;
         }
 
         public IDriveable Status() {
-            Console.WriteLine(State.EngineStatus());
+            Console.WriteLine(_state.EngineStatus());
 
             return this;
         }
 
         public IDriveable SetState(ICarState state) {
             Console.WriteLine("State has changed!");
-            State = state;
+            _state = state;
 
             return this;
         }
