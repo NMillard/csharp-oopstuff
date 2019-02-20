@@ -1,6 +1,7 @@
 using System.Collections.Generic;
+using OOPstuff.SpecificationPattern;
 
-namespace OOPstuff.SpecificationPattern {
+namespace OOPstuff.RepositoryPattern {
     public static class EmployeeDataSet {
 
         public static IList<Employee> Employees() {

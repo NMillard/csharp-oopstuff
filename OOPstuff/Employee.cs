@@ -1,7 +1,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace OOPstuff.SpecificationPattern {
+namespace OOPstuff {
     public class Employee {
         public int Id { get; set; }
         public string Name { get; set; }

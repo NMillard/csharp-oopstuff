@@ -1,28 +1,27 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using OOPstuff.SpecificationPattern;
 
 namespace OOPstuff.RepositoryPattern {
-    public class EmployeeRepository : IRepository<Employee> {
-        private readonly IList<Employee> _employees;
+    public class EmployeeRepository : Repository<Employee> {
 
-        public EmployeeRepository(IList<Employee> employees) {
-            _employees = employees;
+        public EmployeeRepository() : base() {
         }
         
-        public void Add(Employee employee) {
-            _employees.Add(employee);
-        }
-
-        public void Remove(Employee employee) {
-            _employees.Remove(employee);
-        }
-
-        public IQueryable<Employee> Find(Func<Employee, bool> predicate) {
-            return _employees
+        public override IEnumerable<Employee> Find(Func<Employee, bool> predicate) {
+            return List
                 .Where(predicate)
-                .AsQueryable();
+                .ToList();
+        }
+
+        public IEnumerable<Employee> Sort<T>(Func<Employee, T> orderBy) {
+            return List
+                .OrderBy(orderBy)
+                .ToList();
+        }
+
+        public void Add(Employee employee) {
+            List.Add(employee);
         }
     }
 }
